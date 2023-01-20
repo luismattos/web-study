@@ -1,0 +1,94 @@
+p {
+  background: whitesmoke;
+  border: 1px solid red;
+}
+
+#floats section {
+  border: 1px solid green;
+}
+
+#floats p {
+  margin: 16px;
+}
+
+#floats #floats-first-letter p:first-of-type::first-letter {
+  font-size: 56px;
+  border: 1px solid black;
+  padding: 0 16px 0 0;
+
+  float: left;
+}
+
+#floats .floats-box {
+  border: 1px solid blue;
+  margin: 8px;
+  outline: 8px solid cornflowerblue;
+  background: bisque;
+  width: 50px;
+  height: 250px;
+  float: left;
+}
+
+#floats .floats-cleared {
+  clear: left;
+}
+
+#floats .floats-wrapper {
+  padding: 10px;
+  background: burlywood;
+  display: flow-root;
+}
+
+.box {
+  background: steelblue;
+  width: 70px;
+  height: 70px;
+}
+
+#floats-task1 {
+  display: flow-root;
+  width: 290px;
+  border: 4px dotted black;
+  /* margin: auto; */
+}
+
+#floats-task1 .floats-task1-float1 {
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+#floats-task1 .floats-task1-float2 {
+  float: right;
+  margin: 0 0 0 10px;
+}
+
+#floats-task1 p {
+  margin: 0;
+}
+
+#floats-task2 {
+  display: flow-root;
+  border: 4px dotted black;
+}
+
+.floats-task2-float {
+  float: left;
+  margin: 4px;
+}
+
+.floats-task2-below {
+  clear: left;
+}
+
+#floats-task3 {
+  display: flow-root;
+}
+
+.floats-task3-container {
+  display: flow-root;
+  background: blueviolet;
+}
+
+.floats-task3-float {
+  float: right;
+}
