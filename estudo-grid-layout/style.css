@@ -1,0 +1,115 @@
+section {
+  background-color: #fff;
+  color: #333;
+  font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
+  padding: 1em;
+  margin: 0;
+}
+
+.grid {
+  background: wheat;
+}
+
+.grid > * {
+  background-color: #4d7298;
+  border: 2px solid #77a6b6;
+  border-radius: 0.5em;
+  color: #fff;
+  padding: 0.5em;
+}
+
+/* TASK 1 */
+
+.task1-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 1fr));
+  gap: 20px;
+}
+
+/* TASK 2 */
+
+.task2-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100px 100px 100px;
+  gap: 10px;
+}
+
+.task2-item1 {
+  grid-column: 1 / -2;
+  grid-row: 1 / -2;
+}
+
+.task2-item2 {
+  grid-column: 2 / -1;
+  grid-row: 2 / -1;
+}
+
+/* TASK 3 */
+
+.task3-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 10px;
+  grid-template-areas:
+    "one one"
+    "two three"
+    ". four";
+}
+
+.task3-one {
+  grid-area: one;
+}
+
+.task3-two {
+  grid-area: two;
+}
+
+.task3-three {
+  grid-area: three;
+}
+
+.task3-four {
+  grid-area: four;
+}
+
+/* TASK 4 */
+
+.card {
+  display: grid;
+  grid-template-rows: 200px min-content;
+}
+
+.card > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tags {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tags > * {
+  background-color: #999;
+  color: #fff;
+  padding: 0.2em 0.8em;
+  border-radius: 0.2em;
+  font-size: 80%;
+  margin: 5px;
+}
+
+.container {
+  background: wheat;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
